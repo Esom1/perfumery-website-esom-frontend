@@ -1,0 +1,13 @@
+ .package{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+ }
+ .second-layer{
+  background-color: #F2EFEF;
+  /* height:70vh ; */
+ }
+ .first-layer{
+  background-color: white;
+ }
+ 

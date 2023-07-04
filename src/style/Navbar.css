@@ -1,0 +1,88 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&family=Inter:wght@100&family=Open+Sans:wght@500&family=PT+Sans:ital@1&family=Playfair+Display&family=Poppins&family=Red+Hat+Display:wght@300&family=Roboto:wght@100;300;400;700&family=Rubik:wght@300;400&family=Signika+Negative&family=Silkscreen&display=swap');
+.nav-part{
+  font-family: 'Poppins';
+}
+::placeholder{
+  color: #F2EFEF;;
+}
+
+.icon{
+  width: 25px;
+}
+.icon2{
+  width: 18px;
+}
+.fame{
+  width: 80px;
+}
+.holder{
+  border: 1px solid #DB9200;
+  outline: none;
+  /* border-radius: 10px; */
+}
+
+.search-btn{
+  padding: 0.1rem 2.5rem;
+  background-color: #DB9200;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+.relate {
+  width: 700px;
+}
+.icon3 {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.top {
+  position: relative;
+}
+
+.top input:focus {
+  outline: none;
+}
+.arrow{
+  width: 15px;
+  height: 15px;
+  margin-top: 6px;
+}
+.avatar{
+  width: 25px;
+}
+
+.profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.sign-btns {
+  background-color: #DB9200;
+  border: 1px solid #DB9200;
+  padding: 1rem;
+  position: absolute;
+  width: 10rem;
+  top: 30px;
+  right: .5rem;
+  z-index: 1;
+}
+.btns{
+  padding: 0.1rem 1rem;
+  border: 1px solid white;
+  border-radius: 5rem;
+  color: #DB9200;
+  
+}
+.btnss{
+  padding: 0.1rem 0.8rem;
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 5rem;
+  color: #DB9200;
+}
+.arrow{
+  transform: rotate(0.5turn);
+}

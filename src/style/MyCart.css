@@ -1,0 +1,103 @@
+.plus{
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.bord{
+  border: 1px solid black;
+  width: 8%;
+  margin-right: 12rem;
+}
+.one{
+  font-size: 10px;
+  font-weight: 600;
+}
+.bord{
+  position: relative;
+}
+.bord{
+ border: 1px solid black;
+ width: 10%;
+}
+.remove{
+  position: absolute;
+  top: 3rem;
+  left: 9px;
+}
+.ysl{
+  width: 50px;
+}
+.gift-btn{
+  background-color: #DB9200;
+  padding: 0.1rem 0.2rem;
+}
+.gift{
+  border: 1.3px solid #DB9200;
+  border-radius: 4px;
+}
+.gifty{
+  width: 30px;
+  height: 2rem;
+}
+.down{
+  border-bottom:1.3px solid #DB9200;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+.light{
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+.around{
+  border: 1.3px solid #DB9200;
+  border-radius: 4px;
+}
+.vector{
+  width: 13px;
+}
+.lorem{
+  width: 15rem;
+  font-size: 14px;
+  
+}
+.lorem{
+  border-left: 1.3px solid #DB9200;
+/* height: 5rem; */
+}
+.check-out{
+  padding: 0rem 4rem;
+  background-color: #DB9200;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.gifting{
+  border: 2px solid #DB9200;
+  width: 100%;
+  border-radius: 10px;
+}
+.total{
+  border-bottom: 1.5px solid #DB9200;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+.order{
+  border-bottom: 1.5px solid #DB9200;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+.vat{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+span{
+  color: #747474;
+}

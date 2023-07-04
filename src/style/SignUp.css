@@ -1,0 +1,49 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&family=Inter:wght@100&family=Open+Sans:wght@500&family=PT+Sans:ital@1&family=Playfair+Display&family=Red+Hat+Display:wght@300&family=Roboto:wght@100;300;400;700&family=Rubik:wght@300;400&family=Signika+Negative&family=Silkscreen&display=swap');
+
+  .sign-up{
+    background-color: #F2EFEF;
+    height: 100vh;
+  }
+.create{
+  font-family: 'Playfair Display';
+  font-size: 35px;
+  font-weight: 600;
+}
+.first-line{
+  font-family: 'poppins';
+  font-size: 16px;
+  font-weight: 500;
+}
+.first-line2{
+  font-family: 'poppins';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'poppins';
+  font-size: 14px;
+}
+form input {
+  padding: 0.5rem;
+  background-color: #F2EFEF;
+  border: 1px solid #D9D9D9;
+  width: 65%;
+}
+form label{
+  font-weight: 500;
+}
+.signup-btn{
+  background-color: #DB9200;
+  color: white;
+  padding: 0.3rem 13.4rem;
+}
+::placeholder{
+  color: grey;
+}
+.center{
+  margin-left: 14rem;
+}

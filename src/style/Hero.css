@@ -1,0 +1,35 @@
+.arrow{
+  width: 20px;
+}
+.buy-now{
+  padding: 0.1rem 2rem;
+  background-color: #DB9200;
+  color: white;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+.share{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  /* grid-column-gap: 8px; */
+}
+.fetched-img{
+  width: 220px;
+  height: -70rem;
+}
+.hero-border{
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  /* border-radius: 1rem; */
+  margin-bottom: 2rem;
+}
+.review{
+  font-size: 10px;
+}
+.ex{
+  font-size: 13px;
+  font-weight: 500;
+} 
+.dark-cart img{
+  width: 30px;
+}
