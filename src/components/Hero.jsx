@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useContext} from 'react';
+import CartContext from '../hooks/CartContext';
 import '../style/Hero.css';
 import { Link } from 'react-router-dom'
 import arrow from '../assets/Arrow 1.png'
@@ -8,6 +9,7 @@ import darkcart from '../assets/darkcart.svg'
 import axios from 'axios'
 
 const Hero = () => {
+  const {handleAddToCart} = useContext(CartContext)
   const [data,setData] = useState([]);
   let url = 'https://perfumerysite.onrender.com/perfumery/category/men';
   const getFetchedData = async ()=>{
@@ -34,9 +36,8 @@ const Hero = () => {
           {data.map((datum)=>{
             const {_id,title,image,description,category,price} = datum;
             return(
-              <div>
                 <div key={_id} className='hero-border'>
-                  <img className='fetched-img mt-3' src={image} alt="" />
+                  <Link to={`/SingleProduct/${_id}`}><img className='fetched-img mt-3' src={image} alt="" /></Link>
                  <div className='mx-4'>
                  <p className='fw-bold '>{title}</p>
                   <p className='ex'>Exclusive</p>
@@ -52,12 +53,11 @@ const Hero = () => {
                   <p className='review'>50 Reviews</p>
                  </div>
                 <div className='d-flex gap-5'>
-               <div> <button className='btn buy-now'>Buy Now</button></div>
+               <div> <button onClick={()=>{handleAddToCart(datum)}} className='btn buy-now'>Buy Now</button></div>
                <Link to='/MyCart'><div className='dark-cart'> <img src={darkcart} alt="" /></div></Link> 
                 </div>
                  </div>
                 </div>
-              </div>
             )
           })}
         </div>

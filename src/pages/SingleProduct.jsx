@@ -1,32 +1,23 @@
 import React from 'react';
 import '../style/SingleProduct.css'
-// import {useParams, Link } from 'react-router-dom'
-// import axios from 'axios';
-// import bus from '../assets/bus.png'
-// import deliver from '../assets/delivery.png'
-// import pay from '../assets/pay.png'
-// import tag from '../assets/tag.png'
+import UseFetch from '../hooks/UseFetch';
+import {useParams, Link } from 'react-router-dom'
+import axios from 'axios';
+import bus from '../assets/bus.png'
+import deliver from '../assets/delivery.png'
+import pay from '../assets/pay.png'
+import tag from '../assets/tag.png'
 
 
 const SingleProduct = () => {
-  // const {id} = useParams()
-  // const [data,setData] = useState([]);
-  // const{title,image,description,price,category} = data;
-  // let url = `https://perfumerysite.onrender.com/perfumery/${_id}`;
-  // const getFetchedData = async ()=>{
-  //   let fetchedUrl = await axios (url);
-  //   console.log(fetchedUrl.data);
-  //   setData(fetchedUrl.data);
-  // }
-  // useEffect(()=>{
-  //   getFetchedData()
-  // },[]);
-
-
+  const {id} = useParams()
+  const { data,loading } = UseFetch(`https://perfumerysite.onrender.com/perfumery/specificpost/${id}`)
+  const {title,image,description,price,category} = data
  
   return (
     <div className='container'>
-      {/* <div className='row'>
+      <h3>{loading}</h3>
+      <div className='row'>
         <div>
           <img src={image} alt="" />
         </div>
@@ -59,7 +50,7 @@ const SingleProduct = () => {
         </div>
        </div>
        </div>
-      </div> */}
+      </div>
     </div>
   )
 }

@@ -9,7 +9,7 @@ import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
 import Email from './pages/Email';
 import Home from './pages/Home';
-import MyCart from './pages/MyCart';
+import MyCart from './components/MyCart';
 import SingleProduct from './pages/SingleProduct';
 
 

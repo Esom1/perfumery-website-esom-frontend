@@ -28,7 +28,7 @@ const Navbar = () => {
         <button className='search-btn'>Search</button>
        </div>
        <div className='right d-flex gap-4'>
-       <img className='icon' src={cart} alt=""  />
+       <Link to='/MyCart'><img className='icon' src={cart} alt=""  /></Link>
         <img  className='icon2' src={bell} alt="" />
        <div onClick={handleDown} className='d-flex gap-1 profile'>
        <img className='avatar' src={avatar} alt="" />

@@ -1,4 +1,5 @@
-import React, {useEffect , useState} from 'react';
+import React, {useEffect , useState, useContext} from 'react';
+import CartContext from '../hooks/CartContext';
 import '../style/ComboSet.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
@@ -9,6 +10,7 @@ import darkcart from '../assets/darkcart.svg';
 
 
 export const ComboSet = () => {
+  const {handleAddToCart} = useContext(CartContext)
   const [data,setData] = useState([]);
   let url = 'https://perfumerysite.onrender.com/perfumery/category/combo';
   const getFetchData = async ()=>{
@@ -38,7 +40,7 @@ export const ComboSet = () => {
             return(
               <div>
                 <div key={_id} className='hero-border'>
-                  <img className='fetched-img mt-3' src={image} alt="" />
+                 <Link to={`/SingleProduct/${_id}`}><img className='fetched-img mt-3' src={image} alt="" /></Link>
                  <div className='mx-4'>
                  <p className='fw-bold '>{title}</p>
                   <p className='ex'>Exclusive</p>
@@ -54,7 +56,7 @@ export const ComboSet = () => {
                   <p className='review'>50 Reviews</p>
                  </div>
                 <div className='d-flex gap-5'>
-               <div> <button className='btn buy-now'>Buy Now</button></div>
+               <div> <button  onClick={()=>{handleAddToCart(datum)}}  className='btn buy-now'>Buy Now</button></div>
                 <Link to='/MyCart'><div className='dark-cart'> <img src={darkcart} alt="" /></div></Link>
                 </div>
                  </div>
