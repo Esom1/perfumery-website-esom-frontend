@@ -1,13 +1,20 @@
 import React, { createContext, useState, useEffect } from "react";
+import axios  from 'axios'
 const CartContext = createContext();
 
 const cartItemsFromLocalStorage =
   JSON.parse(localStorage.getItem("cartItem")) || [];
 
 export const CartProvider = ({ children }) => {
+  const [loggedIn,setLoggedIn] = useState(undefined)
+  async function getLoggedIn (){
+    const loggedInRes = await axios.get('http://localhost:2020/check/loggedIn')
+    setLoggedIn (loggedIn.data)
+  }
   const [cartItem, setCartItem] = useState(cartItemsFromLocalStorage);
   useEffect(() => {
     localStorage.setItem("cartItem", JSON.stringify(cartItem));
+    getLoggedIn()
   }, [cartItem]);
 
   let handleAddToCart = (product) => {
@@ -77,7 +84,9 @@ export const CartProvider = ({ children }) => {
         handleIncrease,
         handleDecrease,
         handleRemove,
-        totalPrice
+        totalPrice,
+        loggedIn,
+        getLoggedIn
       }}
     >
       {children}

@@ -3,7 +3,7 @@
 
   .sign-up{
     background-color: #F2EFEF;
-    height: 100vh;
+    height: 120vh;
   }
 .create{
   font-family: 'Playfair Display';
@@ -26,6 +26,7 @@ form {
   flex-direction: column;
   font-family: 'poppins';
   font-size: 14px;
+  
 }
 form input {
   padding: 0.5rem;
@@ -39,7 +40,8 @@ form label{
 .signup-btn{
   background-color: #DB9200;
   color: white;
-  padding: 0.3rem 13.4rem;
+  /* padding: 0.3rem 13.4rem; */
+  width: 35rem;
 }
 ::placeholder{
   color: grey;

@@ -7,7 +7,8 @@
 .signin-btn{
   background-color: #DB9200;
   color: white;
-  padding: 0.3rem 15.2rem;
+  /* padding: 0.3rem 3rem; */
+  width: 36rem;
 }
 .below{
   font-family: 'poppins';
